@@ -1,7 +1,7 @@
 CREATE DATABASE erli;
 
 CREATE TABLE `erli`.`images` (
-  `id` VARCHAR(500) NOT NULL,
+  `id` VARCHAR(100) NOT NULL,
   `sourceURL` VARCHAR(500) NOT NULL,
   `targetURL` VARCHAR(500) NOT NULL,
   `addedDate` DATETIME,
