@@ -10,7 +10,7 @@ MySQL
 
 ## Setup
 
-$ Go to \src\mysqlConfig.ts and provide mySQL details. 
+Go to \src\mysqlConfig.ts and provide mySQL details. 
 
 
 Then you can run this app by:
