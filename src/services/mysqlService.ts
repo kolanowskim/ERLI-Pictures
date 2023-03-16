@@ -51,7 +51,7 @@ export const getAllImages = async () => {
 };
 
 export const getStatus = async (id: string) => {
-  return execute<{ id: string }>(sqlQueries.getStatus, [id]);
+  return execute<{ status: string }>(sqlQueries.getStatus, [id]);
 };
 
 export const addInitRecord = async (img: ImageINIT) => {
