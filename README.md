@@ -10,7 +10,8 @@ MySQL
 
 ## Setup
 
-Go to \src\mysqlConfig.ts and provide mySQL details. 
+1. Run this script inside your mySQL -> mySqlScripts/create_schema.sql
+2. Go to \src\mysqlConfig.ts and provide mySQL details.
 
 
 Then you can run this app by:
