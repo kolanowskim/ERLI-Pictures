@@ -1,5 +1,5 @@
 import { createPool, Pool } from "mysql";
-import { config } from "../mysqlConfig";
+import { config } from "../mysqlConfig.js";
 
 let pool: Pool;
 
