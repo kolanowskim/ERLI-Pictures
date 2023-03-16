@@ -1,4 +1,5 @@
 import { createPool, Pool } from "mysql";
+import { config } from "../mysqlConfig";
 
 let pool: Pool;
 
@@ -7,11 +8,9 @@ let pool: Pool;
 export const init = () => {
   try {
     pool = createPool({
-      //connectionLimit: dataSource.DB_CONNECTION_LIMIT,
-      host: "localhost",
-      user: "root",
-      // password: dataSource.DB_PASSWORD,
-      database: "erli",
+      host: config.host,
+      user: config.user,
+      database: config.database,
       multipleStatements: true,
     });
 
@@ -24,7 +23,6 @@ export const init = () => {
 
 /**
  * executes SQL queries in MySQL db
- *
  * @param {string} query - provide a valid SQL query
  * @param {string[] | Object} params - provide the parameterized values used
  * in the query
